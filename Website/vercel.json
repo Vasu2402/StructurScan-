@@ -1,12 +1,8 @@
 {
-  "buildCommand": "echo 'Static site, no build needed'",
-  "outputDirectory": ".",
-  "cleanUrls": false,
-  "trailingSlash": false,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(?!.*\\.)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
