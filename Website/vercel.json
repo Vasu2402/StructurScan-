@@ -1,0 +1,32 @@
+{
+  "buildCommand": "echo 'Static site, no build needed'",
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/privacy",
+      "destination": "/#privacy"
+    },
+    {
+      "source": "/support",
+      "destination": "/#support"
+    },
+    {
+      "source": "/contact",
+      "destination": "/#contact"
+    },
+    {
+      "source": "/features",
+      "destination": "/#features"
+    },
+    {
+      "source": "/about",
+      "destination": "/#about"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
